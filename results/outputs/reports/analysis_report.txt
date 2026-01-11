@@ -1,0 +1,42 @@
+================================================================================
+BITCOIN AS DIGITAL GOLD - ANALYSIS REPORT
+================================================================================
+
+Date: 2026-01-11 02:09:34
+Data period: 2017-11-20 to 2025-01-01
+Training: 2018-01-01 to 2021-12-31
+Testing: 2022-01-01 to 2025-01-01
+
+VOLATILITY FORECASTING RESULTS
+--------------------------------------------------------------------------------
+                       RMSE       MAE
+XGBoost            0.005836  0.004027
+Gradient Boosting  0.005995  0.004134
+Random Forest      0.006180  0.004446
+GARCH              0.010954  0.009269
+
+CLASSIFICATION RESULTS
+--------------------------------------------------------------------------------
+                     Accuracy  Precision    Recall  F1-Score       AUC
+Logistic Regression  0.923797   0.586538  0.813333  0.681564  0.956236
+Random Forest        0.902406   0.541667  0.173333  0.262626  0.899316
+XGBoost              0.921123   0.690476  0.386667  0.495726  0.891233
+Gradient Boosting    0.921123   0.750000  0.320000  0.448598  0.876989
+
+CONCLUSIONS
+--------------------------------------------------------------------------------
+✓ Acceptable volatility level
+✗ Insufficient safe-haven periods
+✗ No clear safe-haven during stress
+✓ Predictable safe-haven behavior (AUC=0.956)
+
+Final Score: 2/4
+Verdict: PARTIAL - Bitcoin shows some gold-like properties
+
+BTC vs GOLD COMPARISON
+--------------------------------------------------------------------------------
+          Metric   BTC  Gold
+Volatility ratio 3.81x 1.00x
+    Safe-haven % 21.0% 42.1%
+ Stress behavior  4.3%     -
+        Best AUC 0.956     -

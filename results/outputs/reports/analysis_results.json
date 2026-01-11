@@ -1,0 +1,91 @@
+{
+    "config": {
+        "dates": {
+            "start": "2017-11-20",
+            "end": "2025-01-01",
+            "train_start": "2018-01-01",
+            "train_end": "2021-12-31",
+            "test_start": "2022-01-01",
+            "test_end": "2025-01-01"
+        },
+        "windows": {
+            "volatility": 30,
+            "correlation": 30,
+            "beta": 60,
+            "horizon": 5
+        },
+        "tickers": {
+            "SP500": "^GSPC",
+            "BTC": "BTC-USD",
+            "Gold": "GC=F",
+            "VIX": "^VIX"
+        },
+        "assets": [
+            "SP500",
+            "BTC",
+            "Gold",
+            "VIX"
+        ],
+        "random_state": 42,
+        "paths": {
+            "data": "outputs/data/",
+            "plots": "outputs/plots/",
+            "reports": "outputs/reports/"
+        }
+    },
+    "volatility_metrics": {
+        "RMSE": {
+            "XGBoost": 0.0058361293312773,
+            "Gradient Boosting": 0.0059949382306599,
+            "Random Forest": 0.0061798133852622,
+            "GARCH": 0.0109539212150547
+        },
+        "MAE": {
+            "XGBoost": 0.0040265210738208,
+            "Gradient Boosting": 0.0041343782955799,
+            "Random Forest": 0.0044455467933055,
+            "GARCH": 0.0092685607815267
+        }
+    },
+    "classification_metrics": {
+        "Accuracy": {
+            "Logistic Regression": 0.9237967914438504,
+            "Random Forest": 0.9024064171122996,
+            "XGBoost": 0.9211229946524064,
+            "Gradient Boosting": 0.9211229946524064
+        },
+        "Precision": {
+            "Logistic Regression": 0.5865384615384616,
+            "Random Forest": 0.5416666666666666,
+            "XGBoost": 0.6904761904761905,
+            "Gradient Boosting": 0.75
+        },
+        "Recall": {
+            "Logistic Regression": 0.8133333333333334,
+            "Random Forest": 0.1733333333333333,
+            "XGBoost": 0.3866666666666666,
+            "Gradient Boosting": 0.32
+        },
+        "F1-Score": {
+            "Logistic Regression": 0.6815642458100558,
+            "Random Forest": 0.2626262626262626,
+            "XGBoost": 0.4957264957264957,
+            "Gradient Boosting": 0.4485981308411215
+        },
+        "AUC": {
+            "Logistic Regression": 0.956235760277365,
+            "Random Forest": 0.8993164933135215,
+            "XGBoost": 0.8912332838038634,
+            "Gradient Boosting": 0.8769886082218921
+        }
+    },
+    "conclusions": {
+        "vol_ratio": 3.813603788964746,
+        "btc_safe_haven_pct": 0.21040850587576945,
+        "gold_safe_haven_pct": 0.421376608841634,
+        "stress_sh_pct": 0.042600896860986545,
+        "calm_sh_pct": 0.2662192393736018,
+        "score": 2,
+        "verdict": "PARTIAL - Bitcoin shows some gold-like properties"
+    }
+}
