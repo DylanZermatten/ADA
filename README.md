@@ -81,10 +81,20 @@ git clone https://github.com/DylanZermatten/ADA.git
 cd ADA
 
 python -m venv venv
-source venv/bin/activate   # macOS / Linux
-# venv\Scripts\activate    # Windows
+
+venv\Scripts\activate
+
+python -m pip install --upgrade pip
 
 pip install -r requirements.txt
 
-python -m notebook Final.ipynb
+### 2 Options
+
+python -m jupyter lab notebooks/Final.ipynb
+
+python main.py
+
+
+
+
 
