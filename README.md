@@ -59,15 +59,16 @@ This project implements a complete end-to-end quantitative pipeline in Python.
 
 ADA/
 │
-├── Final.ipynb # Complete analysis notebook (main entry point)
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
+├── Final.ipynb              # Complete analysis notebook (main entry point)
+├── requirements.txt          # Python dependencies
+├── README.md                # Project documentation
+├── ADA_Report_Dylan_Zermatten.pdf  # 📄 Final project report
 ├── .gitignore
 │
 └── outputs/
-├── data/ # Processed datasets and model outputs
-├── plots/ # Generated figures
-└── reports/ # Final tables and reports
+    ├── data/                # Processed datasets and model outputs
+    ├── plots/               # Generated figures
+    └── reports/             # Final tables and reports
 
 
 
